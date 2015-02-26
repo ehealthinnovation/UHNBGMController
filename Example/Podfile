@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'UHNBGMController', :exclusive => true do
+  pod "UHNBGMController", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "UHNBGMController", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
