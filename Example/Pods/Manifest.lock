@@ -1,0 +1,26 @@
+PODS:
+  - Expecta (0.3.2)
+  - Specta (0.3.2)
+  - UHNBGMController (0.1.0):
+    - UHNBLEController
+  - UHNBLEController (0.1.0):
+    - UHNDebug
+  - UHNDebug (0.1.0)
+
+DEPENDENCIES:
+  - Expecta
+  - Specta
+  - UHNBGMController (from `../`)
+
+EXTERNAL SOURCES:
+  UHNBGMController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Expecta: ee641011fe10aa1855d487b40e4976dac50ec342
+  Specta: 698a58ffa5ec948327d3b92eab50ca58d7f4fbe8
+  UHNBGMController: 9b449d61e4dc6235a8ea9143017d045689cfc1fc
+  UHNBLEController: d2b40042f022575c8a0c608a7aedd18354a8735e
+  UHNDebug: 6bc973e06a88c1b14017040d0bcd1ff9adc9127b
+
+COCOAPODS: 0.35.0

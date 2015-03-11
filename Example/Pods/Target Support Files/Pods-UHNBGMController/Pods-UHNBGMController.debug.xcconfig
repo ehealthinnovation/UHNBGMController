@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Expecta" "${PODS_ROOT}/Headers/Public/Specta" "${PODS_ROOT}/Headers/Public/UHNBGMController" "${PODS_ROOT}/Headers/Public/UHNBLEController" "${PODS_ROOT}/Headers/Public/UHNDebug"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Expecta" -isystem "${PODS_ROOT}/Headers/Public/Specta" -isystem "${PODS_ROOT}/Headers/Public/UHNBGMController" -isystem "${PODS_ROOT}/Headers/Public/UHNBLEController" -isystem "${PODS_ROOT}/Headers/Public/UHNDebug"
+OTHER_LDFLAGS = -ObjC -l"Pods-UHNBGMController-UHNBGMController" -l"Pods-UHNBGMController-UHNBLEController" -l"Pods-UHNBGMController-UHNDebug" -framework "CoreBluetooth" -framework "UIKit"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods
