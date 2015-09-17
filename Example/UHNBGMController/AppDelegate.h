@@ -1,5 +1,5 @@
 //
-//  UHNAppDelegate.h
+//  AppDelegate.h
 //  UHNBGMController
 //
 //  Created by CocoaPods on 02/26/2015.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UHNAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

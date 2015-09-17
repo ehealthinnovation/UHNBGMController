@@ -1,5 +1,5 @@
 //
-//  NSData+BGMParser.h
+//  NSData+GlucoseMeasurementParser.h
 //  UHNBGMController
 //
 //  Created by Nathaniel Hamming on 2013-05-03.
@@ -26,18 +26,8 @@
 #import <Foundation/Foundation.h>
 #import "UHNBGMConstants.h"
 
-@interface NSData (BGMParser)
+@interface NSData (GlucoseMeasurementParser)
 
-- (NSDictionary*)parseGlucoseMeasurementCharacteristicDetails;
-
-//- (NSUInteger)parseGlucoseMeasurementFlags: (NSData*)glucoseMeasurementData;
-//- (NSUInteger)parseGlucoseMeasurementSequenceNumber: (NSData*)glucoseMeasurementData;
-//- (NSInteger)parseGlucoseMeasurementTimeOffset: (NSData*)glucoseMeasurementData;
-//- (NSDate*)parseGlucoseMeasurementCreationDate: (NSData*)glucoseMeasurementData;
-//- (NSNumber*)parseGlucoseMeasurementConcentration: (NSData*)glucoseMeasurementData;
-//- (NSUInteger)parseGlucoseMeasurementType: (NSData*)glucoseMeasurementData;
-//- (NSUInteger)parseGlucoseMeasurementSampleLocation: (NSData*)glucoseMeasurementData;
-//- (NSUInteger)parseGlucoseMeasurementSensorStatus: (NSData*)glucoseMeasurementData;
-//- (NSUInteger)parseGlucoseMeasurementUnitsFormat: (NSData*)glucoseMeasurementData;
+- (NSDictionary *) parseGlucoseMeasurementCharacteristicDetails:(BOOL) crcPresent;
 
 @end

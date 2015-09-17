@@ -24,8 +24,10 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
+#import "UHNRACPControllerDelegate.h"
 #import "UHNBGMConstants.h"
 #import "UHNRACPConstants.h"
+#import "NSNumber+GlucoseConcentrationConversion.h"
 
 @protocol UHNBGMControllerDelegate;
 
@@ -46,28 +48,69 @@
 - (void)connectToDevice:(NSString*)deviceName;
 - (void)disconnect;
 
+///-------------------------
+/// @name Supported Features
+///-------------------------
+
+// Need to run "getGlucoseFeatures" in order to check what is supported
+- (BOOL) isLowBatterySupported;
+- (BOOL) isMultipleBondSupporter;
+- (BOOL) isGeneralDeviceFaultSupported;
+- (BOOL) isSensorMalfunctionDetectionSupported;
+- (BOOL) isSensorReadInterruptDetectionSupported;
+- (BOOL) isSensorResultHighLowDetectionSupported;
+- (BOOL) isSensorSampleSizeSupported;
+- (BOOL) isSensorStripInsertionErrorDetectionSupported;
+- (BOOL) isSensorStripTypeErrorDetectionSupported;
+- (BOOL) isSensorTemperatureHighLogDetectionSupported;
+- (BOOL) isTimeFaultSupported;
+
+// Don't need to run "getGlucoseFeatures" in order to check for this support 
+- (BOOL) isGlucoseMeasurementContextSupported;
+
+///----------------------------------
+/// @name BGM Service Characteristics
+///----------------------------------
+
+- (void) enableAllNotifications:(BOOL) enable;
+- (void) enableNotificationGlucoseMeasurement:(BOOL) enable;
+- (void) enableNotificationGlucoseMeasurementContext:(BOOL) enable;
+
+/**
+ Request that the RACP characteristic indications should be enabled or disabled
+ 
+ @param enable If `YES` indicates that the indications should be enabled. `NO` indicates that the indications should be disabled
+ 
+ @discussion If `enableNotificationRACP:` is completed successfully, the delegete will receive the `bgmController:notificationRACP:` notification
+ 
+ @discussion The BGM RACP Characteristic needs to be enabled to conduct RACP procedures. Also some RACP procedures also require BGM Measurement Characteristic notification enabled
+ 
+ */
+
+- (void) enableNotificationRACP:(BOOL) enable;
+
 ///----------------------------------
 /// @name Record Access Control Point
 ///----------------------------------
-- (void)getNumberOfRecords;
-- (void)getAllRecords;
+- (void) getGlucoseFeatures;
+- (void) getNumberOfStoredRecords;
+- (void) getAllStoredRecords;
 
 @end
 
-
-@protocol UHNBGMControllerDelegate <NSObject>
-- (void)bgmController:(UHNBGMController*)controller didDiscoverGlucoseMeterWithName:(NSString*)bgmDeviceName services:(NSArray*)serviceUUIDs RSSI:(NSNumber*)RSSI;
-- (void)bgmController:(UHNBGMController*)controller didConnectToGlucoseMeterWithName:(NSString*)bgmDeviceName;
-- (void)bgmController:(UHNBGMController*)controller didDisconnectFromGlucoseMeter:(NSString*)bgmDeviceName;
-
-- (void)bgmController:(UHNBGMController*)controller didGetNumberOfRecords:(NSUInteger)numberOfRecords;
-- (void)bgmController:(UHNBGMController*)controller didGetRecordWithValue:(NSNumber*)value creationDate:(NSDate*)date unitsFormat:(NSUInteger)unitsFormat atIndex:(NSUInteger)index;
-- (void)bgmController:(UHNBGMController*)controller didCompleteTransferWithNumberOfRecords:(NSUInteger)numberOfRecords;
-
+@protocol UHNBGMControllerDelegate <NSObject, UHNRACPControllerDelegate>
+- (void) bgmController:(UHNBGMController *) controller didDiscoverGlucoseMeterWithName:(NSString *) bgmDeviceName services:(NSArray *) serviceUUIDs RSSI:(NSNumber *) RSSI;
+- (void) bgmController:(UHNBGMController *) controller didConnectToGlucoseMeterWithName:(NSString *) bgmDeviceName;
+- (void) bgmController:(UHNBGMController *) controller didDisconnectFromGlucoseMeter:(NSString *) bgmDeviceName;
+- (void) bgmController:(UHNBGMController *) controller didGetNumberOfRecords:(NSNumber *) numberOfRecords;
+- (void) bgmController:(UHNBGMController *) controller didGetGlucoseMeasurementAtIndex:(NSUInteger) index withDetails:(NSDictionary *) measurementDetails;
+- (void) bgmController:(UHNBGMController *) controller didGetGlucoseMeasurementContextAtIndex:(NSUInteger) index withDetails:(NSDictionary *) measurementContextDetails;
+- (void) bgmController:(UHNBGMController *) controller didCompleteTransferWithNumberOfRecords:(NSUInteger) numberOfRecords;
 @optional
-- (void)bgmController:(UHNBGMController*)controller RACPOperationSuccessful:(RACPOpCode)opCode;
-- (void)bgmController:(UHNBGMController*)controller RACPOperation:(RACPOpCode)opCode failed:(RACPResponseCode)responseCode;
-- (void)bgmControllerDidGetStoredRecords:(UHNBGMController*)controller;
-- (void)bgmController:(UHNBGMController*)controller didGetNumberOfStoredRecords:(NSNumber*)numOfRecords;
+- (void) bgmControllerDidGetSupportedFeatures:(UHNBGMController *) controller;
+- (void) bgmControllerDidGetStoredRecords:(UHNBGMController *) controller;
+- (void) bgmController:(UHNBGMController *) controller didSetNotificationStateGlucoseMeasurement:(BOOL) enabled;
+- (void) bgmController:(UHNBGMController *) controller didSetNotificationStateGlucoseMeasurementContext:(BOOL) enabled;
+- (void) bgmController:(UHNBGMController *) controller didSetNotificationStateForAllNotifications:(BOOL) enabled;
 
 @end

@@ -2,6 +2,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'UHNBGMController', :exclusive => true do
   pod "UHNBGMController", :path => "../"
+  pod 'UHNDebug'
+  pod 'UHNBLEController', :git => "git@github.ehealthinnovation.org:JDRF/UHNBLEController.git", :branch => 'task/14156_move_generic_methods_from_bgm'
 end
 
 target 'Tests', :exclusive => true do

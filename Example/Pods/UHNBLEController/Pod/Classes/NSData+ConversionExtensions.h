@@ -105,4 +105,35 @@
  */
 - (NSDate*)parseDateWithSecondsSinceReferenceDateWithRange: (NSRange)range;
 
+/**
+ Extracts the low (first 4 bits) nibble of the byte at the given position and returns it as an unsigned integer
+ 
+ @param position The position of the byte to get the lower nibble from
+ 
+ @return The unsigned integer representation of the low nibble of the byte at the position provided
+ 
+ */
+- (NSUInteger) lowNibbleAtPosition:(NSUInteger) position;
+
+/**
+ Extracts the high (last 4 bits) nibble of the byte at the given position and returns it as an unsigned integer
+ 
+ @param position The position of the byte to get the high nibble from
+ 
+ @return The unsigned integer representation of the high nibble of the byte at the position provided
+ 
+ */
+- (NSUInteger) highNibbleAtPosition:(NSUInteger) position;
+
+/**
+ Converts the NSData to an NSDate starting at 'location' and adds 'timeOffsetInMinutesNumber' to the minutes of the date
+ 
+ @param location The location to start parsing the date in the NSData object
+ @param timeOffsetInMinutesNumber An integer number of minutes to be added to the minutes component of the date
+ 
+ @return The NSDate object found by parsing the data at the location specified
+ 
+ */
+- (NSDate *) parseDateAtLocation:(NSUInteger) location andTimeOffsetInMinutes:(NSNumber *) timeOffsetInMinutesNumber;
+
 @end

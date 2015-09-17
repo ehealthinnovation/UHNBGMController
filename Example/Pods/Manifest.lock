@@ -1,9 +1,8 @@
 PODS:
-  - Expecta (0.3.2)
-  - Specta (0.3.2)
-  - UHNBGMController (0.1.0):
-    - UHNBLEController
-  - UHNBLEController (0.1.0):
+  - Expecta (1.0.0)
+  - Specta (1.0.0)
+  - UHNBGMController (0.1.0)
+  - UHNBLEController (0.1.1):
     - UHNDebug
   - UHNDebug (0.1.0)
 
@@ -11,16 +10,26 @@ DEPENDENCIES:
   - Expecta
   - Specta
   - UHNBGMController (from `../`)
+  - UHNBLEController (from `git@github.ehealthinnovation.org:JDRF/UHNBLEController.git`, branch `task/14156_move_generic_methods_from_bgm`)
+  - UHNDebug
 
 EXTERNAL SOURCES:
   UHNBGMController:
     :path: ../
+  UHNBLEController:
+    :branch: task/14156_move_generic_methods_from_bgm
+    :git: git@github.ehealthinnovation.org:JDRF/UHNBLEController.git
+
+CHECKOUT OPTIONS:
+  UHNBLEController:
+    :commit: d06343dfe47c206a7dedcae8dad5a49ed4c43935
+    :git: git@github.ehealthinnovation.org:JDRF/UHNBLEController.git
 
 SPEC CHECKSUMS:
-  Expecta: ee641011fe10aa1855d487b40e4976dac50ec342
-  Specta: 698a58ffa5ec948327d3b92eab50ca58d7f4fbe8
-  UHNBGMController: 9b449d61e4dc6235a8ea9143017d045689cfc1fc
-  UHNBLEController: d2b40042f022575c8a0c608a7aedd18354a8735e
-  UHNDebug: 6bc973e06a88c1b14017040d0bcd1ff9adc9127b
+  Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
+  Specta: 96fe05fe5c7348b5223f85e862904f6e832abb14
+  UHNBGMController: 04ab26c9ed555111a9e61ed9b989032f411d7d4c
+  UHNBLEController: cd72294bf3245773428eb88e2b2ad1e950fa7d9a
+  UHNDebug: 09eb4d23b4c465e4a997d8ea225c29743c06bec8
 
 COCOAPODS: 0.35.0

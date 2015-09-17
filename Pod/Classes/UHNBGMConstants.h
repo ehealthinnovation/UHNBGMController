@@ -26,14 +26,154 @@
 
 // Glucose UUIDs can be found here: http://developer.bluetooth.org/gatt/profiles/Pages/ProfileViewer.aspx?u=org.bluetooth.profile.glucose.xml
 
-// Service UUID
-#define kGlucoseServiceUUID @"1808"
+#define kGlucoseMeasurementRangeFlags                           NSMakeRange(0, 1)
+#define kGlucoseMeasurementRangeSequenceNumber                  NSMakeRange(1, 2)
+
+
+/**
+ Ranges for Glucose Measurement Context
+ */
+
+#define kGlucoseMeasurementContextRangeFlags                    NSMakeRange(0, 1)
+#define kGlucoseMeasurementContextRangeSequenceNumber           NSMakeRange(1, 2)
+
+
+
+///----------------
+/// @name BGM Keys
+///----------------
+#pragma mark - Keys
+
+/**
+ Keys shared between characteristic details
+ */
+#define kGlucoseMeasurementKeySequenceNumber                        @"GlucoseMeasurementKeySequenceNumber"
+#define kGlucoseMeasurementKeyCreationDate                          @"GlucoseMeasurementKeyCreationDate"
+#define kGlucoseMeasurementKeyTimeOffset                            @"GlucoseMeasurementKeyTimeOffset"
+#define kGlucoseMeasurementKeyGlucoseConcentration                  @"GlucoseMeasurementKeyGlucoseConcentration"
+#define kGlucoseMeasurementKeyGlucoseConcentrationUnits             @"GlucoseMeasurementKeyGlucoseConcentrationUnits"
+#define kGlucoseMeasurementKeyType                                  @"GlucoseMeasurementKeyGlucoseType"
+#define kGlucoseMeasurementKeySampleLocation                        @"GlucoseMeasurementKeyGlucoseSampleLocation"
+#define kGlucoseMeasurementKeySensorStatusAnnunciation              @"GlucoseMeasurementKeyGlucoseSensorStatusAnnunciation"
+#define kBGMCRCFailed                                               @"BGMCRCFailed"
+
+///----------------
+/// @name Glucose Measurement Context Keys
+///----------------
+#pragma mark - Keys
+
+/**
+ Keys shared between characteristic details
+ */
+#define kGlucoseMeasurementContextKeySequenceNumber                 @"GlucoseMeasurementContextKeySequenceNumber"
+#define kGlucoseMeasurementContextKeyExtendedFlags                  @"GlucoseMeasurementContextKeyExtendedFlags"
+#define kGlucoseMeasurementContextKeyCarbohydrateID                 @"GlucoseMeasurementContextKeyCarbohydrateID"
+#define kGlucoseMeasurementContextKeyCarbohydrate                   @"GlucoseMeasurementContextKeyCarbohydrate"
+#define kGlucoseMeasurementContextKeyMeal                           @"GlucoseMeasurementContextKeyMeal"
+#define kGlucoseMeasurementContextKeyTester                         @"GlucoseMeasurementContextKeyTester"
+#define kGlucoseMeasurementContextKeyHealth                         @"GlucoseMeasurementContextKeyHealth"
+#define kGlucoseMeasurementContextKeyExerciseDuration               @"GlucoseMeasurementContextKeyExerciseDuration"
+#define kGlucoseMeasurementContextKeyExerciseIntensity              @"GlucoseMeasurementContextKeyExerciseIntensity"
+#define kGlucoseMeasurementContextKeyMedicationID                   @"GlucoseMeasurementContextKeyMedicationID"
+#define kGlucoseMeasurementContextKeyMedicationValue                @"GlucoseMeasurementContextKeyMedicationValue"
+#define kGlucoseMeasurementContextKeyMedicationUnits                @"GlucoseMeasurementContextKeyMedicationUnits"
+#define kGlucoseMeasurementContextKeyHbA1c                          @"GlucoseMeasurementContextKeyHbA1c"
+
+///---------------------------
+/// @name Glucose Service UUID
+///---------------------------
+#define kGlucoseServiceUUID                                         @"1808"
 
 // Characteristic UUID
-#define kGlucoseCharacteristicUUIDMeasurement @"2A18"
-#define kGlucoseCharacteristicUUIDMeasurementContext @"2A34"
-#define kGlucoseCharacteristicUUIDSupportedFeatures @"2A51"
-#define kGlucoseCharacteristicUUIDRACP @"2A52"
+#define kGlucoseServiceCharacteristicUUIDMeasurement                @"2A18"
+#define kGlucoseServiceCharacteristicUUIDMeasurementContext         @"2A34"
+#define kGlucoseServiceCharacteristicUUIDSupportedFeatures          @"2A51"
+#define kGlucoseServiceCharacteristicUUIDRecordAccessControlPoint   @"2A52"
+
+
+typedef NS_ENUM (NSUInteger, GlucoseMeasurementType)
+{
+    GlucoseMeasurementTypeReserved                                  = 0,
+    GlucoseMeasurementTypeCapillaryWholeBlood,
+    GlucoseMeasurementTypeCapillaryPlasma,
+    GlucoseMeasurementTypeVenousWholeBlood,
+    GlucoseMeasurementTypeVenousPlasma,
+    GlucoseMeasurementTypeArterialWholeBlood,
+    GlucoseMeasurementTypeArterialPlasma,
+    GlucoseMeasurementTypeUndeterminedWholeBlood,
+    GlucoseMeasurementTypeUndeterminedPlasma,
+    GlucoseMeasurementTypeInterstitialFluid,
+    GlucoseMeasurementTypeControlSolution,
+};
+
+typedef NS_ENUM (NSUInteger, GlucoseMeasurementSampleLocation)
+{
+    GlucoseMeasurementSampleLocationReserved                        = 0,
+    GlucoseMeasurementSampleLocationFinger,
+    GlucoseMeasurementSampleLocationAlternateSiteTest,
+    GlucoseMeasurementSampleLocationEarlobe,
+    GlucoseMeasurementSampleLocationControlSolution,
+    GlucoseMeasurementSampleLocationSampleLocationValue             = 15,
+};
+
+typedef NS_ENUM (NSUInteger, GlucoseMeasurementContextCarbohydrateID)
+{
+    GlucoseMeasurementContextCarbohydrateIDReserved                 = 0,
+    GlucoseMeasurementContextCarbohydrateIDBreakfast,
+    GlucoseMeasurementContextCarbohydrateIDLunch,
+    GlucoseMeasurementContextCarbohydrateIDDinner,
+    GlucoseMeasurementContextCarbohydrateIDSnack,
+    GlucoseMeasurementContextCarbohydrateIDDrink,
+    GlucoseMeasurementContextCarbohydrateIDSupper,
+    GlucoseMeasurementContextCarbohydrateIDBrunch,
+};
+
+typedef NS_ENUM (NSUInteger, GlucoseMeasurementContextMeal)
+{
+    GlucoseMeasurementContextMealReserved                           = 0,
+    GlucoseMeasurementContextMealPreprandial,
+    GlucoseMeasurementContextMealPostprandial,
+    GlucoseMeasurementContextMealFasting,
+    GlucoseMeasurementContextMealCasual,
+    GlucoseMeasurementContextMealBedtime,
+};
+
+typedef NS_ENUM (NSUInteger, GlucoseMeasurementContextTester)
+{
+    GlucoseMeasurementContextTesterReserved                         = 0,
+    GlucoseMeasurementContextTesterSelf,
+    GlucoseMeasurementContextTesterHealthCareProfessional,
+    GlucoseMeasurementContextTesterLabTest,
+    GlucoseMeasurementContextTesterValueNotAvailable                = 15,
+};
+
+typedef NS_ENUM (NSUInteger, GlucoseMeasurementContextHealth)
+{
+    GlucoseMeasurementContextHealthReserved                         = 0,
+    GlucoseMeasurementContextHealthMinorHealthIssues,
+    GlucoseMeasurementContextHealthMajoreHealthIssues,
+    GlucoseMeasurementContextHealthDuringMenses,
+    GlucoseMeasurementContextHealthUnderStress,
+    GlucoseMeasurementContextHealthNoHealthIssues,
+    GlucoseMeasurementContextHealthValueNotAvailable                = 15,
+};
+
+typedef NS_ENUM (NSUInteger, GlucoseMeasurementContextMedicationID)
+{
+    GlucoseMeasurementContextMedicationIDReserved                   = 0,
+    GlucoseMeasurementContextMedicationIDRapidActingInsulin,
+    GlucoseMeasurementContextMedicationIDShortActingInsulin,
+    GlucoseMeasurementContextMedicationIDIntermediateActingInsulin,
+    GlucoseMeasurementContextMedicationIDLongActingInsulin,
+    GlucoseMeasurementContextMedicationIDPreMixedInsulin,
+};
+
+typedef NS_ENUM (NSUInteger, GlucoseMeasurementContextMedicationUnits)
+{
+    GlucoseMeasurementContextMedicationUnitsKg                      = 0,
+    GlucoseMeasurementContextMedicationUnitsL,
+    GlucoseMeasurementContextMedicationUnitsG,
+};
 
 /**********  Glucose Measurement Format (Mandatory) ***************
     Flags - 8 bits (Mandatory)
@@ -123,13 +263,29 @@
  
  **********************************************/
 
+
+
 // Glucose Measurement Flag Bits
-typedef NS_ENUM (uint8_t, GlucoseMeasurementFlagOption) {
-    GlucoseMeasurementFlagPresentTimeOffset         = (1 << 0),
-    GlucoseMeasurementFlagPresentTypeLocation       = (1 << 1),
-    GlucoseMeasurementFlagUnitsFormat               = (1 << 2), // 0 = kg/L, 1 = mol/L
-    GlucoseMeasurementFlagPresentStatus             = (1 << 3),
-    GlucoseMeasurementFlagPresentContextInfo        = (1 << 4)
+typedef NS_ENUM (uint8_t, GlucoseMeasurementFlagOption)
+{
+    GlucoseMeasurementFlagPresentTimeOffset                                     = (1 << 0),
+    GlucoseMeasurementFlagPresentGlucoseConcentrationTypeAndSampleLocation      = (1 << 1),
+    GlucoseMeasurementFlagGlucoseConcentrationUnits                             = (1 << 2), // 0 = kg/L, 1 = mol/L
+    GlucoseMeasurementFlagPresentSensorStatusAnnunciation                       = (1 << 3),
+    GlucoseMeasurementFlagPresentContextInfo                                    = (1 << 4),
+};
+
+// Glucose Measurement Context Flag Bits
+typedef NS_ENUM (uint8_t, GlucoseMeasurementContextFlagOption)
+{
+    GlucoseMeasurementContextFlagPresentCarbohydrateIDAndCarbohydrate           = (1 << 0),
+    GlucoseMeasurementContextFlagPresentMeal                                    = (1 << 1),
+    GlucoseMeasurementContextFlagPresentTesterHealth                            = (1 << 2),
+    GlucoseMeasurementContextFlagPresentExerciseDurationAndExerciseIntensity    = (1 << 3),
+    GlucoseMeasurementContextFlagPresentMedicationIDAndMedication               = (1 << 4),
+    GlucoseMeasurementContextFlagPresentMedicationUnits                         = (1 << 5),
+    GlucoseMeasurementContextFlagPresentHbA1c                                   = (1 << 6),
+    GlucoseMeasurementContextFlagPresentExtendedFlags                           = (1 << 7),
 };
 
 // Glucose Measurement Fluid Type
@@ -139,19 +295,20 @@ typedef NS_ENUM (uint8_t, GlucoseMeasurementFlagOption) {
 /** Sample location is defined in the UHNBLETypes.h constants in the UHNBLEController pod */
 
 // Glucose Measurement Sensor Status Bits
-typedef NS_ENUM (uint16_t, GlucoseMeasurementStatusOption) {
-    GlucoseMeasurementStatusDeviceBatteryLow                = (1 << 0),
-    GlucoseMeasurementStatusSensorMalfunction               = (1 << 1),
-    GlucoseMeasurementStatusSampleSizeInsufficient          = (1 << 2),
-    GlucoseMeasurementStatusStripInsertionError             = (1 << 3),
-    GlucoseMeasurementStatusStripTypeIncorrect              = (1 << 4),
-    GlucoseMeasurementStatusResultExceedsSensorLimitUpper   = (1 << 5),
-    GlucoseMeasurementStatusResultExceedsSensorLimitLower   = (1 << 6),
-    GlucoseMeasurementStatusDeviceTemperatureTooHigh        = (1 << 7),
-    GlucoseMeasurementStatusDeviceTemperatureTooLow         = (1 << 8),
-    GlucoseMeasurementStatusStripPulledTooSoon              = (1 << 9),
-    GlucoseMeasurementStatusFaultGeneral                    = (1 << 10),
-    GlucoseMeasurementStatusFaultTime                       = (1 << 11)
+typedef NS_ENUM (uint16_t, GlucoseMeasurementStatusOption)
+{
+    GlucoseMeasurementStatusDeviceBatteryLow                                    = (1 << 0),
+    GlucoseMeasurementStatusSensorMalfunction                                   = (1 << 1),
+    GlucoseMeasurementStatusSampleSizeInsufficient                              = (1 << 2),
+    GlucoseMeasurementStatusStripInsertionError                                 = (1 << 3),
+    GlucoseMeasurementStatusStripTypeIncorrect                                  = (1 << 4),
+    GlucoseMeasurementStatusResultExceedsSensorLimitUpper                       = (1 << 5),
+    GlucoseMeasurementStatusResultExceedsSensorLimitLower                       = (1 << 6),
+    GlucoseMeasurementStatusDeviceTemperatureTooHigh                            = (1 << 7),
+    GlucoseMeasurementStatusDeviceTemperatureTooLow                             = (1 << 8),
+    GlucoseMeasurementStatusStripPulledTooSoon                                  = (1 << 9),
+    GlucoseMeasurementStatusFaultGeneral                                        = (1 << 10),
+    GlucoseMeasurementStatusFaultTime                                           = (1 << 11)
 };
 
 
@@ -254,7 +411,8 @@ typedef NS_ENUM (uint16_t, GlucoseMeasurementStatusOption) {
  **********************************************/
 
 // Feature Support Bits
-typedef NS_ENUM (uint16_t, GlucoseFeatureOption) {
+typedef NS_ENUM (uint16_t, GlucoseFeatureOption)
+{
     GlucoseFeatureSupportedLowBattery                               = (1 << 0),
     GlucoseFeatureSupportedDetectionSensorMalfunction               = (1 << 1),
     GlucoseFeatureSupportedSensorSampleSize                         = (1 << 2),
@@ -266,8 +424,8 @@ typedef NS_ENUM (uint16_t, GlucoseFeatureOption) {
     GlucoseFeatureSupportedFaultDevice                              = (1 << 8),
     GlucoseFeatureSupportedFaultTime                                = (1 << 9),
     GlucoseFeatureSupportedMultipleBonds                            = (1 << 10),
+    GlucoseFeatureSupportedGlucoseMeasurementContext                = (1 << 11),
 };
-
 
 // Error codes
 #define kGlucoseServiceErrorCodeProcedureInProgress 0x80

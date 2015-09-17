@@ -1,5 +1,5 @@
 //
-//  UHNViewController.h
+//  ViewController.h
 //  UHNBGMController
 //
 //  Created by Nathaniel Hamming on 02/26/2015.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UHNViewController : UIViewController
+@interface ViewController : UIViewController
 
 @end

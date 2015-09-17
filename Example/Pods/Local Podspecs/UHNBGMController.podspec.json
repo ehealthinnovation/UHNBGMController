@@ -1,0 +1,35 @@
+{
+  "name": "UHNBGMController",
+  "version": "0.1.0",
+  "summary": "A short description of UHNBGMController.",
+  "description": "                       An optional longer description of UHNBGMController\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "homepage": "https://github.com/uhnmdi/UHNBGMController",
+  "license": "MIT",
+  "authors": {
+    "Nathaniel Hamming": "nathaniel.hamming@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/uhnmdi/UHNBGMController.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/NAteHAm80",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "UHNBGMController": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "CoreBluetooth"
+  ],
+  "dependencies": {
+    "UHNBLEController": [
+
+    ]
+  }
+}

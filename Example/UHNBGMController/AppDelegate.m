@@ -1,14 +1,14 @@
 //
-//  UHNAppDelegate.m
+//  AppDelegate.m
 //  UHNBGMController
 //
 //  Created by CocoaPods on 02/26/2015.
 //  Copyright (c) 2014 Nathaniel Hamming. All rights reserved.
 //
 
-#import "UHNAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation UHNAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
