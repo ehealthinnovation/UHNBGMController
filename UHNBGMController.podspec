@@ -34,5 +34,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'CoreBluetooth'
-  #s.dependency 'UHNBLEController'
+  s.dependency 'UHNDebug'
+  s.dependency 'UHNBLEController'
 end
