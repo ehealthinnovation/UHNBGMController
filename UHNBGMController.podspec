@@ -10,15 +10,14 @@
 Pod::Spec.new do |s|
   s.name             = "UHNBGMController"
   s.version          = "0.1.0"
-  s.summary          = "A short description of UHNBGMController."
+  s.summary          = "A bluetooth glucose service collector."
   s.description      = <<-DESC
-                       An optional longer description of UHNBGMController
+                       The bluetooth glucose service collector is built upon the UHNBLEControlelr, a general central BLE controller. The Glucose Collector provides a delegate based interface to interacting with Glucose service as defined by BT-SIG.
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Read/Write/Notification interact with Glucose characterisitics
+                       Procedures via record access control point
                        DESC
   s.homepage         = "https://github.com/uhnmdi/UHNBGMController"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Nathaniel Hamming" => "nathaniel.hamming@gmail.com" }
   s.source           = { :git => "https://github.com/uhnmdi/UHNBGMController.git", :tag => s.version.to_s }
@@ -32,8 +31,8 @@ Pod::Spec.new do |s|
     'UHNBGMController' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'CoreBluetooth'
+  s.frameworks = 'CoreBluetooth'
   s.dependency 'UHNDebug'
   s.dependency 'UHNBLEController'
+  
 end

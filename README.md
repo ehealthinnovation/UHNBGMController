@@ -1,15 +1,16 @@
 # UHNBGMController
 
-[![CI Status](http://img.shields.io/travis/Nathaniel Hamming/UHNBGMController.svg?style=flat)](https://travis-ci.org/Nathaniel Hamming/UHNBGMController)
-[![Version](https://img.shields.io/cocoapods/v/UHNBGMController.svg?style=flat)](http://cocoadocs.org/docsets/UHNBGMController)
-[![License](https://img.shields.io/cocoapods/l/UHNBGMController.svg?style=flat)](http://cocoadocs.org/docsets/UHNBGMController)
-[![Platform](https://img.shields.io/cocoapods/p/UHNBGMController.svg?style=flat)](http://cocoadocs.org/docsets/UHNBGMController)
+_This is a pre-alpha release and as such some functionality is not finalized. The purpose of making this code available as a pre-alpha was to allow others to conduct feasibility assessments. As always, if you discover an issue or have a suggestion, please fork and submit a pull request._
+
+## Description
+
+A bluetooth Glucose service collector that provides a delegate based interface to a Glucose service peripheral as defined by the BT-SIG
 
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+See the example app for details on implementing the BGM controller
 
 ## Installation
 
@@ -17,6 +18,10 @@ UHNBGMController is available through [CocoaPods](http://cocoapods.org). To inst
 it, simply add the following line to your Podfile:
 
     pod "UHNBGMController"
+
+## Documentation
+
+`appledoc` of the pod can be found at `./docs/html/index.html`
 
 ## Author
 
