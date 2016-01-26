@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GlucoseMeasurementStatusOption.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GlucoseMeasurementStatusOption</TokenIdentifier>
+			<Abstract type="html">All possible Glucose Measurement Sensor Status Flags with their assigned bit position</Abstract>
+			<DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementStatusDeviceBatteryLow</TokenIdentifier>
+            <Abstract type="html">Flag indicating that the device battery level is low</Abstract>
+            <Declaration>GlucoseMeasurementStatusDeviceBatteryLow</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementStatusSensorMalfunction</TokenIdentifier>
+            <Abstract type="html">Flag indicating that the sensor has malfunctioned</Abstract>
+            <Declaration>GlucoseMeasurementStatusSensorMalfunction</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementStatusSampleSizeInsufficient</TokenIdentifier>
+            <Abstract type="html">Flag indicating that the device battery level is low</Abstract>
+            <Declaration>GlucoseMeasurementStatusSampleSizeInsufficient</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementStatusStripInsertionError</TokenIdentifier>
+            <Abstract type="html">Flag indicating that an error occurred during strip insertion</Abstract>
+            <Declaration>GlucoseMeasurementStatusStripInsertionError</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementStatusStripTypeIncorrect</TokenIdentifier>
+            <Abstract type="html">Flag indicating that the strip type is incorrect</Abstract>
+            <Declaration>GlucoseMeasurementStatusStripTypeIncorrect</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementStatusResultExceedsSensorLimitUpper</TokenIdentifier>
+            <Abstract type="html">Flag indicating that the result exceeds the sensor upper limit</Abstract>
+            <Declaration>GlucoseMeasurementStatusResultExceedsSensorLimitUpper</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementStatusResultExceedsSensorLimitLower</TokenIdentifier>
+            <Abstract type="html">Flag indicating that the result exceeds the sensor lower limit</Abstract>
+            <Declaration>GlucoseMeasurementStatusResultExceedsSensorLimitLower</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementStatusDeviceTemperatureTooHigh</TokenIdentifier>
+            <Abstract type="html">Flag indicating that the device temperature is too high</Abstract>
+            <Declaration>GlucoseMeasurementStatusDeviceTemperatureTooHigh</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementStatusDeviceTemperatureTooLow</TokenIdentifier>
+            <Abstract type="html">Flag indicating that the device temperature is too low</Abstract>
+            <Declaration>GlucoseMeasurementStatusDeviceTemperatureTooLow</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementStatusStripPulledTooSoon</TokenIdentifier>
+            <Abstract type="html">Flag indicating that the strip was pulled too soon</Abstract>
+            <Declaration>GlucoseMeasurementStatusStripPulledTooSoon</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementStatusFaultGeneral</TokenIdentifier>
+            <Abstract type="html">Flag indicating that a general fault occurred</Abstract>
+            <Declaration>GlucoseMeasurementStatusFaultGeneral</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementStatusFaultTime</TokenIdentifier>
+            <Abstract type="html">Flag indicating that a time fault occurred</Abstract>
+            <Declaration>GlucoseMeasurementStatusFaultTime</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

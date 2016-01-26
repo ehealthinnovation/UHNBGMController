@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UHNBGMController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UHNBGMController</TokenIdentifier>
+			<Abstract type="html">The UHNBGMController provides an interface to a BLE peripheral that implements the Glucose Service and Device Information services. Through the inteface and delegate protocol, one should be able to easily make requests of a Glucose meter sensor.</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/initWithDelegate:</TokenIdentifier>
+			<Abstract type="html">UHNBGMController is initialized with a delegate and optional required services. If only the Glucose profile mandatory services are required, initialize using initWithDelegate:. Mandatory services include GLS and DIS.</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithDelegate:(id&lt;UHNBGMControllerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The delegate object that will received discovery, connectivity, and read/write events. This parameter is mandatory.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Instance of a UHNBGMController</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDelegate:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/initWithDelegate:requiredServices:</TokenIdentifier>
+			<Abstract type="html">UHNBGMController is initialized with a delegate and optional required services.</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithDelegate:(id&lt;UHNBGMControllerDelegate&gt;)delegate requiredServices:(NSArray *)serviceUUIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The delegate object that will received discovery, connectivity, and read/write events. This parameter is mandatory.</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceUUIDs</Name>
+					<Abstract type="html">The required services used to filter eligibility of discovered peripherals. Only peripherals that advertist all the required services will be deemed eligible and reported to the delegate. If services is nil, only the peripherals discovered with the mandatory Glucose profile services will be reported to the delegate. Mandatory services include GLS and DIS.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Instance of a UHNBGMController</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDelegate:requiredServices:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/isConnected</TokenIdentifier>
+			<Abstract type="html">Determine if a glucose sensor is connected</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isConnected</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if a glucose sensor is connected, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isConnected</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/tryToReconnect</TokenIdentifier>
+			<Abstract type="html">Try to reconnect to the previously connected glucose sensor</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)tryToReconnect</Declaration>
+			
+			
+			<Anchor>//api/name/tryToReconnect</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/connectToDevice:</TokenIdentifier>
+			<Abstract type="html">Try to connect to the glucose sensor advertising the device name</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)connectToDevice:(NSString *)deviceName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>deviceName</Name>
+					<Abstract type="html">The name of the device with which a connection is desired. Device names are reported when the glucose sensors are discovered.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectToDevice:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/disconnect</TokenIdentifier>
+			<Abstract type="html">Disconnect from the connected glucose sensor</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)disconnect</Declaration>
+			
+			
+			<Anchor>//api/name/disconnect</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/getGlucoseFeatures</TokenIdentifier>
+			<Abstract type="html">Get the features of the connected glucose sensor</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)getGlucoseFeatures</Declaration>
+			
+			
+			<Anchor>//api/name/getGlucoseFeatures</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/isLowBatterySupported</TokenIdentifier>
+			<Abstract type="html">Check if detection of low battery is suported by the connected glucose sensor</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isLowBatterySupported</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if low battery detection is supported, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isLowBatterySupported</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/isMultipleBondSupporter</TokenIdentifier>
+			<Abstract type="html">Check if multiple bonds is supported</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isMultipleBondSupporter</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if multiple bonds is supported, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isMultipleBondSupporter</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/isGeneralDeviceFaultSupported</TokenIdentifier>
+			<Abstract type="html">Check if general device fault is supported</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isGeneralDeviceFaultSupported</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if general device fault is supported, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isGeneralDeviceFaultSupported</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/isSensorMalfunctionDetectionSupported</TokenIdentifier>
+			<Abstract type="html">Check if detection of a sensor malfunction is supported</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isSensorMalfunctionDetectionSupported</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if detection of a sensor malfunction is supported, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isSensorMalfunctionDetectionSupported</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/isSensorReadInterruptDetectionSupported</TokenIdentifier>
+			<Abstract type="html">Check if detection of a sensor read interrupt is supported</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isSensorReadInterruptDetectionSupported</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if detection of a sensor read interrupt is supported, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isSensorReadInterruptDetectionSupported</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/isSensorResultHighLowDetectionSupported</TokenIdentifier>
+			<Abstract type="html">Check if result exceeds low or high limits detection is supported</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isSensorResultHighLowDetectionSupported</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if result exceeds low or high limits detection is supported, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isSensorResultHighLowDetectionSupported</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/isSensorSampleSizeSupported</TokenIdentifier>
+			<Abstract type="html">Check if sensor sample size is supported</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isSensorSampleSizeSupported</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if sensor sample size is supported, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isSensorSampleSizeSupported</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/isSensorStripInsertionErrorDetectionSupported</TokenIdentifier>
+			<Abstract type="html">Check if strip insertion error detection is supported</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isSensorStripInsertionErrorDetectionSupported</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if strip insertion error detection is supported, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isSensorStripInsertionErrorDetectionSupported</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/isSensorStripTypeErrorDetectionSupported</TokenIdentifier>
+			<Abstract type="html">Check if strip type error detection is supported</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isSensorStripTypeErrorDetectionSupported</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if strip type error detection is supported, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isSensorStripTypeErrorDetectionSupported</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/isSensorTemperatureHighLogDetectionSupported</TokenIdentifier>
+			<Abstract type="html">Check if sensor temperature too high or low detection is supported</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isSensorTemperatureHighLogDetectionSupported</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if sensor temperature too high or low detection is supported, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isSensorTemperatureHighLogDetectionSupported</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/isTimeFaultSupported</TokenIdentifier>
+			<Abstract type="html">Check if time fault detection is supported</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isTimeFaultSupported</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if time fault detection is supported, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isTimeFaultSupported</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/isGlucoseMeasurementContextSupported</TokenIdentifier>
+			<Abstract type="html">Check if glucose measurement context is supported</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isGlucoseMeasurementContextSupported</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if glucose measurement context is supported, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isGlucoseMeasurementContextSupported</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/enableAllNotifications:</TokenIdentifier>
+			<Abstract type="html">Request that the glucose measurement, glucose measurement context and RACP characteristics notifcations should be enabled or disabled</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)enableAllNotifications:(BOOL)enable</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enable</Name>
+					<Abstract type="html">If YES indicates that the notifications should be enabled. NO indicates that the notifications should be disabled</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enableAllNotifications:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/enableNotificationGlucoseMeasurement:</TokenIdentifier>
+			<Abstract type="html">Request that the glucose measurement characteristic notifcations should be enabled or disabled</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)enableNotificationGlucoseMeasurement:(BOOL)enable</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enable</Name>
+					<Abstract type="html">If YES indicates that the notification should be enabled. NO indicates that the notification should be disabled</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enableNotificationGlucoseMeasurement:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/enableNotificationGlucoseMeasurementContext:</TokenIdentifier>
+			<Abstract type="html">Request that the glucose measurement context characteristic notifcations should be enabled or disabled</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)enableNotificationGlucoseMeasurementContext:(BOOL)enable</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enable</Name>
+					<Abstract type="html">If YES indicates that the notification should be enabled. NO indicates that the notification should be disabled</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enableNotificationGlucoseMeasurementContext:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/enableNotificationRACP:</TokenIdentifier>
+			<Abstract type="html">Request that the RACP characteristic indications should be enabled or disabled</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)enableNotificationRACP:(BOOL)enable</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enable</Name>
+					<Abstract type="html">If YES indicates that the indications should be enabled. NO indicates that the indications should be disabled</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enableNotificationRACP:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/getNumberOfStoredRecords</TokenIdentifier>
+			<Abstract type="html">Request to get the number of all the stored records from the glucose sensor</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)getNumberOfStoredRecords</Declaration>
+			
+			
+			<Anchor>//api/name/getNumberOfStoredRecords</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBGMController/getAllStoredRecords</TokenIdentifier>
+			<Abstract type="html">Request to get all stored records from the glucose sensor</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)getAllStoredRecords</Declaration>
+			
+			
+			<Anchor>//api/name/getAllStoredRecords</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

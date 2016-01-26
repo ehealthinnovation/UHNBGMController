@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GlucoseMeasurementContextMeal.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GlucoseMeasurementContextMeal</TokenIdentifier>
+			<Abstract type="html">All possible Glucose Measurement Context Meal IDs with their assigned bit position</Abstract>
+			<DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextMealReserved</TokenIdentifier>
+            <Abstract type="html">Meal ID that is reserved</Abstract>
+            <Declaration>GlucoseMeasurementContextMealReserved</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="9"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextMealPreprandial</TokenIdentifier>
+            <Abstract type="html">Meal ID for pre-prandial</Abstract>
+            <Declaration>GlucoseMeasurementContextMealPreprandial</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="9"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextMealPostprandial</TokenIdentifier>
+            <Abstract type="html">Meal ID for post-prandial</Abstract>
+            <Declaration>GlucoseMeasurementContextMealPostprandial</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="9"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextMealFasting</TokenIdentifier>
+            <Abstract type="html">Meal ID for fasting</Abstract>
+            <Declaration>GlucoseMeasurementContextMealFasting</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="9"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextMealCasual</TokenIdentifier>
+            <Abstract type="html">Meal ID for casual</Abstract>
+            <Declaration>GlucoseMeasurementContextMealCasual</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="9"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextMealBedtime</TokenIdentifier>
+            <Abstract type="html">Meal ID for bedtime</Abstract>
+            <Declaration>GlucoseMeasurementContextMealBedtime</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="9"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

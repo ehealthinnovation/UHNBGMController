@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		481FC7D91C448A1F00AE79D1 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 481FC7DC1C448A1F00AE79D1 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				481FC7DD1C448A4100AE79D1 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		20E64B1CB66F27C84A4CAE80 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D0ED4535E0C5601796321C /* libPods-Tests.a */; };
 		33B38FE4D63C0D348D575829 /* libPods-UHNBGMController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B43A132DFAF02D36E7AC30A0 /* libPods-UHNBGMController.a */; };
@@ -249,6 +263,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Nathaniel Hamming";
 				TargetAttributes = {
+					481FC7D91C448A1F00AE79D1 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = F663BTMH9Q;
 						SystemCapabilities = {
@@ -277,6 +294,7 @@
 			targets = (
 				6003F589195388D20070C39A /* UHNBGMController */,
 				6003F5AD195388D20070C39A /* Tests */,
+				481FC7D91C448A1F00AE79D1 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -318,6 +336,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UHNBGMController/Pods-UHNBGMController-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		481FC7DD1C448A4100AE79D1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"Centre for Global eHealth Innovation\";\ncompanyID=\"org.ehealthinnovation\";\ncompanyURL=\"http://ehealthinnovation.com\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"../docs\";\n# End constants\n/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--output \"${outputPath}\" \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n--ignore .m \\\n--ignore FBSnapshotTestCase \\\n--ignore Expecta \\\n--ignore Specta \\\n--ignore OCMockito \\\n--ignore OCHamcrest \\\n--ignore UHNBLEController \\\n--ignore UHNDebug \\\n\"${PROJECT_DIR}\"";
 		};
 		6D1A85398AD0E0275607D044 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -461,6 +492,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		481FC7DA1C448A1F00AE79D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		481FC7DB1C448A1F00AE79D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		6003F5BD195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -606,6 +651,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		481FC7DC1C448A1F00AE79D1 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				481FC7DA1C448A1F00AE79D1 /* Debug */,
+				481FC7DB1C448A1F00AE79D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6003F585195388D10070C39A /* Build configuration list for PBXProject "UHNBGMController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

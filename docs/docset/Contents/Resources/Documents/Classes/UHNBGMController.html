@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>UHNBGMController Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">UHNBGMController </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Centre for Global eHealth Innovation</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/connectToDevice:">- connectToDevice:</option>
+		
+		<option value="//api/name/disconnect">- disconnect</option>
+		
+		<option value="//api/name/enableAllNotifications:">- enableAllNotifications:</option>
+		
+		<option value="//api/name/enableNotificationGlucoseMeasurement:">- enableNotificationGlucoseMeasurement:</option>
+		
+		<option value="//api/name/enableNotificationGlucoseMeasurementContext:">- enableNotificationGlucoseMeasurementContext:</option>
+		
+		<option value="//api/name/enableNotificationRACP:">- enableNotificationRACP:</option>
+		
+		<option value="//api/name/getAllStoredRecords">- getAllStoredRecords</option>
+		
+		<option value="//api/name/getGlucoseFeatures">- getGlucoseFeatures</option>
+		
+		<option value="//api/name/getNumberOfStoredRecords">- getNumberOfStoredRecords</option>
+		
+		<option value="//api/name/initWithDelegate:">- initWithDelegate:</option>
+		
+		<option value="//api/name/initWithDelegate:requiredServices:">- initWithDelegate:requiredServices:</option>
+		
+		<option value="//api/name/isConnected">- isConnected</option>
+		
+		<option value="//api/name/isGeneralDeviceFaultSupported">- isGeneralDeviceFaultSupported</option>
+		
+		<option value="//api/name/isGlucoseMeasurementContextSupported">- isGlucoseMeasurementContextSupported</option>
+		
+		<option value="//api/name/isLowBatterySupported">- isLowBatterySupported</option>
+		
+		<option value="//api/name/isMultipleBondSupporter">- isMultipleBondSupporter</option>
+		
+		<option value="//api/name/isSensorMalfunctionDetectionSupported">- isSensorMalfunctionDetectionSupported</option>
+		
+		<option value="//api/name/isSensorReadInterruptDetectionSupported">- isSensorReadInterruptDetectionSupported</option>
+		
+		<option value="//api/name/isSensorResultHighLowDetectionSupported">- isSensorResultHighLowDetectionSupported</option>
+		
+		<option value="//api/name/isSensorSampleSizeSupported">- isSensorSampleSizeSupported</option>
+		
+		<option value="//api/name/isSensorStripInsertionErrorDetectionSupported">- isSensorStripInsertionErrorDetectionSupported</option>
+		
+		<option value="//api/name/isSensorStripTypeErrorDetectionSupported">- isSensorStripTypeErrorDetectionSupported</option>
+		
+		<option value="//api/name/isSensorTemperatureHighLogDetectionSupported">- isSensorTemperatureHighLogDetectionSupported</option>
+		
+		<option value="//api/name/isTimeFaultSupported">- isTimeFaultSupported</option>
+		
+		<option value="//api/name/tryToReconnect">- tryToReconnect</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">UHNBGMController Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>UHNBGMController.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The UHNBGMController provides an interface to a BLE peripheral that implements the Glucose Service and Device Information services. Through the inteface and delegate protocol, one should be able to easily make requests of a Glucose meter sensor.</p><div class="warning"><p><strong>Warning:</strong> Support for Device Information services will be included in a future release.</p></div>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Initialization of UHNBGMController" name="task_Initialization of UHNBGMController"></a>
+						<h2 class="task-title">Initialization of UHNBGMController</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithDelegate:" title="initWithDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithDelegate:">&ndash;&nbsp;initWithDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>UHNBGMController is initialized with a delegate and optional required services. If only the Glucose profile mandatory services are required, initialize using <code>initWithDelegate:</code>. Mandatory services include GLS and DIS.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithDelegate:(id&lt;UHNBGMControllerDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>The delegate object that will received discovery, connectivity, and read/write events. This parameter is mandatory.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Instance of a UHNBGMController</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithDelegate:requiredServices:" title="initWithDelegate:requiredServices:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithDelegate:requiredServices:">&ndash;&nbsp;initWithDelegate:requiredServices:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>UHNBGMController is initialized with a delegate and optional required services.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithDelegate:(id&lt;UHNBGMControllerDelegate&gt;)<em>delegate</em> requiredServices:(NSArray *)<em>serviceUUIDs</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>The delegate object that will received discovery, connectivity, and read/write events. This parameter is mandatory.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceUUIDs</code></th>
+						<td><p>The required services used to filter eligibility of discovered peripherals. Only peripherals that advertist all the required services will be deemed eligible and reported to the delegate. If <code>services</code> is <code>nil</code>, only the peripherals discovered with the mandatory Glucose profile services will be reported to the delegate. Mandatory services include GLS and DIS.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Instance of a UHNBGMController</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Connection Methods" name="task_Connection Methods"></a>
+						<h2 class="task-title">Connection Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/isConnected" title="isConnected"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isConnected">&ndash;&nbsp;isConnected</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Determine if a glucose sensor is connected</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isConnected</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if a glucose sensor is connected, otherwise <code>NO</code></p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tryToReconnect" title="tryToReconnect"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tryToReconnect">&ndash;&nbsp;tryToReconnect</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Try to reconnect to the previously connected glucose sensor</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)tryToReconnect</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connectToDevice:" title="connectToDevice:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connectToDevice:">&ndash;&nbsp;connectToDevice:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Try to connect to the glucose sensor advertising the device name</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connectToDevice:(NSString *)<em>deviceName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceName</code></th>
+						<td><p>The name of the device with which a connection is desired. Device names are reported when the glucose sensors are discovered.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/disconnect" title="disconnect"></a>
+	<h3 class="method-title"><code><a href="#//api/name/disconnect">&ndash;&nbsp;disconnect</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Disconnect from the connected glucose sensor</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)disconnect</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Supported Features" name="task_Supported Features"></a>
+						<h2 class="task-title">Supported Features</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getGlucoseFeatures" title="getGlucoseFeatures"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getGlucoseFeatures">&ndash;&nbsp;getGlucoseFeatures</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the features of the connected glucose sensor</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getGlucoseFeatures</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><code>getGlucoseFeatures</code> needs to be called before any checks of the supported features</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isLowBatterySupported" title="isLowBatterySupported"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isLowBatterySupported">&ndash;&nbsp;isLowBatterySupported</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if detection of low battery is suported by the connected glucose sensor</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isLowBatterySupported</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if low battery detection is supported, otherwise <code>NO</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/getGlucoseFeatures"><code>getGlucoseFeatures</code></a> needs to be called first in order to read the Features characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isMultipleBondSupporter" title="isMultipleBondSupporter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isMultipleBondSupporter">&ndash;&nbsp;isMultipleBondSupporter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if multiple bonds is supported</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isMultipleBondSupporter</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if multiple bonds is supported, otherwise <code>NO</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/getGlucoseFeatures"><code>getGlucoseFeatures</code></a> needs to be called first in order to read the Features characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isGeneralDeviceFaultSupported" title="isGeneralDeviceFaultSupported"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isGeneralDeviceFaultSupported">&ndash;&nbsp;isGeneralDeviceFaultSupported</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if general device fault is supported</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isGeneralDeviceFaultSupported</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if general device fault is supported, otherwise <code>NO</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/getGlucoseFeatures"><code>getGlucoseFeatures</code></a> needs to be called first in order to read the Features characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isSensorMalfunctionDetectionSupported" title="isSensorMalfunctionDetectionSupported"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isSensorMalfunctionDetectionSupported">&ndash;&nbsp;isSensorMalfunctionDetectionSupported</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if detection of a sensor malfunction is supported</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isSensorMalfunctionDetectionSupported</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if detection of a sensor malfunction is supported, otherwise <code>NO</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/getGlucoseFeatures"><code>getGlucoseFeatures</code></a> needs to be called first in order to read the Features characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isSensorReadInterruptDetectionSupported" title="isSensorReadInterruptDetectionSupported"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isSensorReadInterruptDetectionSupported">&ndash;&nbsp;isSensorReadInterruptDetectionSupported</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if detection of a sensor read interrupt is supported</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isSensorReadInterruptDetectionSupported</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if detection of a sensor read interrupt is supported, otherwise <code>NO</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/getGlucoseFeatures"><code>getGlucoseFeatures</code></a> needs to be called first in order to read the Features characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isSensorResultHighLowDetectionSupported" title="isSensorResultHighLowDetectionSupported"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isSensorResultHighLowDetectionSupported">&ndash;&nbsp;isSensorResultHighLowDetectionSupported</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if result exceeds low or high limits detection is supported</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isSensorResultHighLowDetectionSupported</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if result exceeds low or high limits detection is supported, otherwise <code>NO</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/getGlucoseFeatures"><code>getGlucoseFeatures</code></a> needs to be called first in order to read the Features characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isSensorSampleSizeSupported" title="isSensorSampleSizeSupported"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isSensorSampleSizeSupported">&ndash;&nbsp;isSensorSampleSizeSupported</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if sensor sample size is supported</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isSensorSampleSizeSupported</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if sensor sample size is supported, otherwise <code>NO</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/getGlucoseFeatures"><code>getGlucoseFeatures</code></a> needs to be called first in order to read the Features characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isSensorStripInsertionErrorDetectionSupported" title="isSensorStripInsertionErrorDetectionSupported"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isSensorStripInsertionErrorDetectionSupported">&ndash;&nbsp;isSensorStripInsertionErrorDetectionSupported</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if strip insertion error detection is supported</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isSensorStripInsertionErrorDetectionSupported</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if strip insertion error detection is supported, otherwise <code>NO</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/getGlucoseFeatures"><code>getGlucoseFeatures</code></a> needs to be called first in order to read the Features characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isSensorStripTypeErrorDetectionSupported" title="isSensorStripTypeErrorDetectionSupported"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isSensorStripTypeErrorDetectionSupported">&ndash;&nbsp;isSensorStripTypeErrorDetectionSupported</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if strip type error detection is supported</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isSensorStripTypeErrorDetectionSupported</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if strip type error detection is supported, otherwise <code>NO</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/getGlucoseFeatures"><code>getGlucoseFeatures</code></a> needs to be called first in order to read the Features characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isSensorTemperatureHighLogDetectionSupported" title="isSensorTemperatureHighLogDetectionSupported"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isSensorTemperatureHighLogDetectionSupported">&ndash;&nbsp;isSensorTemperatureHighLogDetectionSupported</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if sensor temperature too high or low detection is supported</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isSensorTemperatureHighLogDetectionSupported</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if sensor temperature too high or low detection is supported, otherwise <code>NO</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/getGlucoseFeatures"><code>getGlucoseFeatures</code></a> needs to be called first in order to read the Features characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isTimeFaultSupported" title="isTimeFaultSupported"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isTimeFaultSupported">&ndash;&nbsp;isTimeFaultSupported</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if time fault detection is supported</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isTimeFaultSupported</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if time fault detection is supported, otherwise <code>NO</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/getGlucoseFeatures"><code>getGlucoseFeatures</code></a> needs to be called first in order to read the Features characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isGlucoseMeasurementContextSupported" title="isGlucoseMeasurementContextSupported"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isGlucoseMeasurementContextSupported">&ndash;&nbsp;isGlucoseMeasurementContextSupported</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if glucose measurement context is supported</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isGlucoseMeasurementContextSupported</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if glucose measurement context is supported, otherwise <code>NO</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/getGlucoseFeatures"><code>getGlucoseFeatures</code></a> does NOT need to be called first in order to determine if glucose measurement context support is provided</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Glucose Service Characteristics" name="task_Glucose Service Characteristics"></a>
+						<h2 class="task-title">Glucose Service Characteristics</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/enableAllNotifications:" title="enableAllNotifications:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableAllNotifications:">&ndash;&nbsp;enableAllNotifications:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request that the glucose measurement, glucose measurement context and RACP characteristics notifcations should be enabled or disabled</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableAllNotifications:(BOOL)<em>enable</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>If <code>YES</code> indicates that the notifications should be enabled. <code>NO</code> indicates that the notifications should be disabled</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If <code>enableAllNotifications:</code> is completed successfully, the delegete will receive the <code>bgmController:didSetNotificationStateForAllNotifications:</code> notification</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableNotificationGlucoseMeasurement:" title="enableNotificationGlucoseMeasurement:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableNotificationGlucoseMeasurement:">&ndash;&nbsp;enableNotificationGlucoseMeasurement:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request that the glucose measurement characteristic notifcations should be enabled or disabled</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableNotificationGlucoseMeasurement:(BOOL)<em>enable</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>If <code>YES</code> indicates that the notification should be enabled. <code>NO</code> indicates that the notification should be disabled</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If <code>enableNotificationGlucoseMeasurement:</code> is completed successfully, the delegete will receive the <code>bgmController:didSetNotificationStateGlucoseMeasurement:</code> notification</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableNotificationGlucoseMeasurementContext:" title="enableNotificationGlucoseMeasurementContext:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableNotificationGlucoseMeasurementContext:">&ndash;&nbsp;enableNotificationGlucoseMeasurementContext:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request that the glucose measurement context characteristic notifcations should be enabled or disabled</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableNotificationGlucoseMeasurementContext:(BOOL)<em>enable</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>If <code>YES</code> indicates that the notification should be enabled. <code>NO</code> indicates that the notification should be disabled</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If <code>enableNotificationGlucoseMeasurementContext:</code> is completed successfully, the delegete will receive the <code>bgmController:didSetNotificationStateGlucoseMeasurementContext:</code> notification</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableNotificationRACP:" title="enableNotificationRACP:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableNotificationRACP:">&ndash;&nbsp;enableNotificationRACP:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request that the RACP characteristic indications should be enabled or disabled</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableNotificationRACP:(BOOL)<em>enable</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>If <code>YES</code> indicates that the indications should be enabled. <code>NO</code> indicates that the indications should be disabled</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If <code>enableNotificationRACP:</code> is completed successfully, the delegete will receive the <code>bgmController:notificationRACP:</code> notification</p><p>The BGM RACP Characteristic needs to be enabled to conduct RACP procedures. Also some RACP procedures also require BGM Measurement Characteristic notification enabled</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Record Access Control Point" name="task_Record Access Control Point"></a>
+						<h2 class="task-title">Record Access Control Point</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getNumberOfStoredRecords" title="getNumberOfStoredRecords"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNumberOfStoredRecords">&ndash;&nbsp;getNumberOfStoredRecords</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request to get the number of all the stored records from the glucose sensor</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getNumberOfStoredRecords</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If <code>getNumberOfStoredRecords</code> is completed successfully, the delegete will receive the <code>bgmController:didGetNumberOfRecords:</code> notification</p><p>If &lsquo;getNumberOfStoredRecords<code>is unsuccessful, the delegate will receive the</code>bgmController:RACPOperation:failed:` notification.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAllStoredRecords" title="getAllStoredRecords"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAllStoredRecords">&ndash;&nbsp;getAllStoredRecords</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request to get all stored records from the glucose sensor</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getAllStoredRecords</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If <code>getAllStoredRecords</code> is completed successfully, the delegete will receive the <code>bgmController:RACPOperationSuccessful:</code> and/or <code>bgmController:didCompleteTransferWithNumberOfRecords:</code> notification (depending on which protocol methods are used). This is left up to the implementation.</p><p>If &lsquo;getAllStoredRecords<code>is unsuccessful, the delegate will receive the</code>bgmController:RACPOperation:failed:` notification.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBGMController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Centre for Global eHealth Innovation. All rights reserved. Updated: 2016-01-22</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

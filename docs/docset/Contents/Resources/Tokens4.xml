@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/UHNBGMControllerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/UHNBGMControllerDelegate</TokenIdentifier>
+			<Abstract type="html">The UHNBGMControllerDelegate protocol defines the methods that a delegate of a UHNBGMController object must adopt. The optional methods of the protocol allow the delegate to monitor, request, or command the Glucose sensor. The required methods of the protocol indicates discovery, connectivity, and reporting current glucose measurements with the Glucose sensor.</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHNBGMControllerDelegate/bgmController:didDiscoverGlucoseMeterWithName:services:RSSI:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate when a Glucose sensor has been discovered</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)bgmController:(UHNBGMController *)controller didDiscoverGlucoseMeterWithName:(NSString *)bgmDeviceName services:(NSArray *)serviceUUIDs RSSI:(NSNumber *)RSSI</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The UHNBGMController which with the Glucose sensor was discovered</Abstract>
+				</Parameter><Parameter>
+					<Name>bgmDeviceName</Name>
+					<Abstract type="html">The device name of the Glucose sensor</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceUUIDs</Name>
+					<Abstract type="html">An array of NSString representing the UUID of the services available for the Glucose sensor. This array includes all the provided required services and potentially additional services.</Abstract>
+				</Parameter><Parameter>
+					<Name>RSSI</Name>
+					<Abstract type="html">The rssi power of the Glucose Sensor</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/bgmController:didDiscoverGlucoseMeterWithName:services:RSSI:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHNBGMControllerDelegate/bgmController:didConnectToGlucoseMeterWithName:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate when a Glucose sensor did connect</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)bgmController:(UHNBGMController *)controller didConnectToGlucoseMeterWithName:(NSString *)bgmDeviceName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The UHNBGMController that is managing the Glucose sensor</Abstract>
+				</Parameter><Parameter>
+					<Name>bgmDeviceName</Name>
+					<Abstract type="html">The device name of the Glucose sensor</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/bgmController:didConnectToGlucoseMeterWithName:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHNBGMControllerDelegate/bgmController:didDisconnectFromGlucoseMeter:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate when a Glucose sensor was disconnected</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)bgmController:(UHNBGMController *)controller didDisconnectFromGlucoseMeter:(NSString *)bgmDeviceName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The UHNBGMController that was managing the Glucose sensor</Abstract>
+				</Parameter><Parameter>
+					<Name>bgmDeviceName</Name>
+					<Abstract type="html">The device name of the peripheral</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/bgmController:didDisconnectFromGlucoseMeter:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHNBGMControllerDelegate/bgmController:didGetNumberOfRecords:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate that the requested get number of stored records has been completed successfully</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)bgmController:(UHNBGMController *)controller didGetNumberOfRecords:(NSNumber *)numberOfRecords</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The UHNBGMController which with the RACP procedure was executed</Abstract>
+				</Parameter><Parameter>
+					<Name>numberOfRecords</Name>
+					<Abstract type="html">The number of stored records</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/bgmController:didGetNumberOfRecords:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHNBGMControllerDelegate/bgmController:didGetGlucoseMeasurementAtIndex:withDetails:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate when a Glucose sensor has a measurement to report</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)bgmController:(UHNBGMController *)controller didGetGlucoseMeasurementAtIndex:(NSUInteger)index withDetails:(NSDictionary *)measurementDetails</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The UHNBGMController that is managing the Glucose sensor</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of the record received</Abstract>
+				</Parameter><Parameter>
+					<Name>measurementDetails</Name>
+					<Abstract type="html">A NSDictionary including all the measurement details</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/bgmController:didGetGlucoseMeasurementAtIndex:withDetails:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHNBGMControllerDelegate/bgmController:didGetGlucoseMeasurementContextAtIndex:withDetails:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate when a Glucose sensor has a measurement context to report</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)bgmController:(UHNBGMController *)controller didGetGlucoseMeasurementContextAtIndex:(NSUInteger)index withDetails:(NSDictionary *)measurementContextDetails</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The UHNBGMController that is managing the Glucose sensor</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of the record received</Abstract>
+				</Parameter><Parameter>
+					<Name>measurementContextDetails</Name>
+					<Abstract type="html">A NSDictionary including all the measurement context details</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/bgmController:didGetGlucoseMeasurementContextAtIndex:withDetails:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHNBGMControllerDelegate/bgmController:didCompleteTransferWithNumberOfRecords:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate that the requested get of stored records has been completed successfully</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)bgmController:(UHNBGMController *)controller didCompleteTransferWithNumberOfRecords:(NSUInteger)numberOfRecords</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The UHNBGMController which with the RACP procedure was executed</Abstract>
+				</Parameter><Parameter>
+					<Name>numberOfRecords</Name>
+					<Abstract type="html">The number of records transferred</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/bgmController:didCompleteTransferWithNumberOfRecords:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHNBGMControllerDelegate/bgmControllerDidGetSupportedFeatures:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate when the Glucose sensor features characteristic has been read</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)bgmControllerDidGetSupportedFeatures:(UHNBGMController *)controller</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The UHNBGMController which with the characteristic was read</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/bgmControllerDidGetSupportedFeatures:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHNBGMControllerDelegate/bgmController:didSetNotificationStateGlucoseMeasurement:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate when the Glucose Measurement characteristic notification has been enabled or disabled</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)bgmController:(UHNBGMController *)controller didSetNotificationStateGlucoseMeasurement:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The UHNBGMController which with the characteristic was configured</Abstract>
+				</Parameter><Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">If YES indicates that the notification was enabled. NO indicates that the notification was disabled</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/bgmController:didSetNotificationStateGlucoseMeasurement:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHNBGMControllerDelegate/bgmController:didSetNotificationStateGlucoseMeasurementContext:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate when the Glucose Measurement Context characteristic notification has been enabled or disabled</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)bgmController:(UHNBGMController *)controller didSetNotificationStateGlucoseMeasurementContext:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The UHNBGMController which with the characteristic was configured</Abstract>
+				</Parameter><Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">If YES indicates that the notification was enabled. NO indicates that the notification was disabled</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/bgmController:didSetNotificationStateGlucoseMeasurementContext:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHNBGMControllerDelegate/bgmController:didSetNotificationStateForAllNotifications:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate when all the characteristic notifications have been enabled or disabled</Abstract>
+			<DeclaredIn>UHNBGMController.h</DeclaredIn>
+			
+			<Declaration>- (void)bgmController:(UHNBGMController *)controller didSetNotificationStateForAllNotifications:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The UHNBGMController which with the characteristics were configured</Abstract>
+				</Parameter><Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">If YES indicates that all the notification were enabled. NO indicates that the notifications were disabled</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/bgmController:didSetNotificationStateForAllNotifications:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

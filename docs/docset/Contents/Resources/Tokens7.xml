@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GlucoseMeasurementContextFlagOption.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GlucoseMeasurementContextFlagOption</TokenIdentifier>
+			<Abstract type="html">All possible Glucose Measurement Context Flags with their assigned bit position</Abstract>
+			<DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextFlagPresentCarbohydrateIDAndCarbohydrate</TokenIdentifier>
+            <Abstract type="html">Flag indicating the presence of the carbohydrate ID and carbohydrate value</Abstract>
+            <Declaration>GlucoseMeasurementContextFlagPresentCarbohydrateIDAndCarbohydrate</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextFlagPresentMeal</TokenIdentifier>
+            <Abstract type="html">Flag indicating the presence of the meal ID</Abstract>
+            <Declaration>GlucoseMeasurementContextFlagPresentMeal</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextFlagPresentTesterHealth</TokenIdentifier>
+            <Abstract type="html">Flag indicating the presence of the tester and health ID</Abstract>
+            <Declaration>GlucoseMeasurementContextFlagPresentTesterHealth</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextFlagPresentExerciseDurationAndExerciseIntensity</TokenIdentifier>
+            <Abstract type="html">Flag indicating the presence of the exercise duration and exercise intensity</Abstract>
+            <Declaration>GlucoseMeasurementContextFlagPresentExerciseDurationAndExerciseIntensity</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextFlagPresentMedicationIDAndMedication</TokenIdentifier>
+            <Abstract type="html">Flag indicating the presence of the medication ID and medication value</Abstract>
+            <Declaration>GlucoseMeasurementContextFlagPresentMedicationIDAndMedication</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextFlagPresentMedicationUnits</TokenIdentifier>
+            <Abstract type="html">Flag indicating the presence of the medication units</Abstract>
+            <Declaration>GlucoseMeasurementContextFlagPresentMedicationUnits</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextFlagPresentHbA1c</TokenIdentifier>
+            <Abstract type="html">Flag indicating the presence of the HbA1c value</Abstract>
+            <Declaration>GlucoseMeasurementContextFlagPresentHbA1c</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextFlagPresentExtendedFlags</TokenIdentifier>
+            <Abstract type="html">Flag indicating the presence of additional flags</Abstract>
+            <Declaration>GlucoseMeasurementContextFlagPresentExtendedFlags</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

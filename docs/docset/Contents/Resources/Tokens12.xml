@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GlucoseMeasurementContextTester.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GlucoseMeasurementContextTester</TokenIdentifier>
+			<Abstract type="html">All possible Glucose Measurement Context Tester IDs with their assigned bit position</Abstract>
+			<DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextTesterReserved</TokenIdentifier>
+            <Abstract type="html">Tester ID that is reserved</Abstract>
+            <Declaration>GlucoseMeasurementContextTesterReserved</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="12"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextTesterSelf</TokenIdentifier>
+            <Abstract type="html">Tester ID for self</Abstract>
+            <Declaration>GlucoseMeasurementContextTesterSelf</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="12"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextTesterHealthCareProfessional</TokenIdentifier>
+            <Abstract type="html">Tester ID for health care professional</Abstract>
+            <Declaration>GlucoseMeasurementContextTesterHealthCareProfessional</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="12"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextTesterLabTest</TokenIdentifier>
+            <Abstract type="html">Tester ID for lab test</Abstract>
+            <Declaration>GlucoseMeasurementContextTesterLabTest</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="12"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextTesterValueNotAvailable</TokenIdentifier>
+            <Abstract type="html">Tester ID for value not available</Abstract>
+            <Declaration>GlucoseMeasurementContextTesterValueNotAvailable</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="12"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

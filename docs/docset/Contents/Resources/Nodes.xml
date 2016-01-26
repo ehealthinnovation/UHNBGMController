@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>UHNBGMController</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node>
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+				<Node>
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="4"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+				<Node>
+					<Name>Constants</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1" type="file" documentType="reference">
+            <Name>UHNBGMController</Name>
+            <Path>Classes/UHNBGMController.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UHNBGMController.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UHNBGMController.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/UHNBGMController.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+		<Node id="2" type="file" documentType="reference">
+            <Name>NSData(GlucoseMeasurementContextParser)</Name>
+            <Path>Categories/NSData+GlucoseMeasurementContextParser.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/NSData+GlucoseMeasurementContextParser.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/NSData+GlucoseMeasurementContextParser.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/NSData+GlucoseMeasurementContextParser.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>NSData(GlucoseMeasurementParser)</Name>
+            <Path>Categories/NSData+GlucoseMeasurementParser.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/NSData+GlucoseMeasurementParser.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/NSData+GlucoseMeasurementParser.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/NSData+GlucoseMeasurementParser.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        <Node id="4" type="file" documentType="reference">
+            <Name>UHNBGMControllerDelegate</Name>
+            <Path>Protocols/UHNBGMControllerDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/UHNBGMControllerDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/UHNBGMControllerDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/UHNBGMControllerDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        <Node id="5" type="file" documentType="reference">
+            <Name>GlucoseFeatureOption</Name>
+            <Path>Constants/GlucoseFeatureOption.html</Path>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>GlucoseMeasurementContextCarbohydrateID</Name>
+            <Path>Constants/GlucoseMeasurementContextCarbohydrateID.html</Path>
+            
+        </Node>
+		<Node id="7" type="file" documentType="reference">
+            <Name>GlucoseMeasurementContextFlagOption</Name>
+            <Path>Constants/GlucoseMeasurementContextFlagOption.html</Path>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>GlucoseMeasurementContextHealth</Name>
+            <Path>Constants/GlucoseMeasurementContextHealth.html</Path>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>GlucoseMeasurementContextMeal</Name>
+            <Path>Constants/GlucoseMeasurementContextMeal.html</Path>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>GlucoseMeasurementContextMedicationID</Name>
+            <Path>Constants/GlucoseMeasurementContextMedicationID.html</Path>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>GlucoseMeasurementContextMedicationUnits</Name>
+            <Path>Constants/GlucoseMeasurementContextMedicationUnits.html</Path>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
+            <Name>GlucoseMeasurementContextTester</Name>
+            <Path>Constants/GlucoseMeasurementContextTester.html</Path>
+            
+        </Node>
+		<Node id="13" type="file" documentType="reference">
+            <Name>GlucoseMeasurementFlagOption</Name>
+            <Path>Constants/GlucoseMeasurementFlagOption.html</Path>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
+            <Name>GlucoseMeasurementStatusOption</Name>
+            <Path>Constants/GlucoseMeasurementStatusOption.html</Path>
+            
+        </Node>
+		
+        
+	</Library>
+</DocSetNodes>

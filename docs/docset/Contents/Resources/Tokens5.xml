@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GlucoseFeatureOption.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GlucoseFeatureOption</TokenIdentifier>
+			<Abstract type="html">All possible Feature Flags with their assigned bit position</Abstract>
+			<DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseFeatureSupportedLowBattery</TokenIdentifier>
+            <Abstract type="html">Flag indicating the support for low battery detection</Abstract>
+            <Declaration>GlucoseFeatureSupportedLowBattery</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="5"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseFeatureSupportedDetectionSensorMalfunction</TokenIdentifier>
+            <Abstract type="html">Flag indicating the support for sensor malfunction detection</Abstract>
+            <Declaration>GlucoseFeatureSupportedDetectionSensorMalfunction</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="5"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseFeatureSupportedSensorSampleSize</TokenIdentifier>
+            <Abstract type="html">Flag indicating the support for sensor sample size</Abstract>
+            <Declaration>GlucoseFeatureSupportedSensorSampleSize</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="5"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseFeatureSupportedDetectionStripErrorInsertion</TokenIdentifier>
+            <Abstract type="html">Flag indicating the support for strip insertion error detection</Abstract>
+            <Declaration>GlucoseFeatureSupportedDetectionStripErrorInsertion</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="5"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseFeatureSupportedDetectionStripErrorType</TokenIdentifier>
+            <Abstract type="html">Flag indicating the support for strip type error detection</Abstract>
+            <Declaration>GlucoseFeatureSupportedDetectionStripErrorType</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="5"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseFeatureSupportedDetectionResultExceedsSensorLimit</TokenIdentifier>
+            <Abstract type="html">Flag indicating the support for result exceeds sensor limit detection</Abstract>
+            <Declaration>GlucoseFeatureSupportedDetectionResultExceedsSensorLimit</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="5"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseFeatureSupportedDetectionSensorTemperatureTooLowHigh</TokenIdentifier>
+            <Abstract type="html">Flag indicating the support for sensor temperature too low or high detection</Abstract>
+            <Declaration>GlucoseFeatureSupportedDetectionSensorTemperatureTooLowHigh</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="5"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseFeatureSupportedDetectionSensorReadInterrupt</TokenIdentifier>
+            <Abstract type="html">Flag indicating the support for sender read interrupt detection</Abstract>
+            <Declaration>GlucoseFeatureSupportedDetectionSensorReadInterrupt</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="5"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseFeatureSupportedFaultDevice</TokenIdentifier>
+            <Abstract type="html">Flag indicating the support for device fault error</Abstract>
+            <Declaration>GlucoseFeatureSupportedFaultDevice</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="5"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseFeatureSupportedFaultTime</TokenIdentifier>
+            <Abstract type="html">Flag indicating the support for time fault error</Abstract>
+            <Declaration>GlucoseFeatureSupportedFaultTime</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="5"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseFeatureSupportedMultipleBonds</TokenIdentifier>
+            <Abstract type="html">Flag indicating the support for multiple bonds</Abstract>
+            <Declaration>GlucoseFeatureSupportedMultipleBonds</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="5"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseFeatureSupportedGlucoseMeasurementContext</TokenIdentifier>
+            <Abstract type="html">Flag indicating the support for glucose measurement context</Abstract>
+            <Declaration>GlucoseFeatureSupportedGlucoseMeasurementContext</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="5"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSData+GlucoseMeasurementParser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(GlucoseMeasurementParser)</TokenIdentifier>
+			<Abstract type="html">NSData+GlucoseMeasurementParser provides glucose measurement response parsing</Abstract>
+			<DeclaredIn>NSData+GlucoseMeasurementParser.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/parseGlucoseMeasurementCharacteristicDetails:</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary with all the data of the glucose measurement characteristic. Keys and enumerations are defined in the UHNBGMConstants.h file, which is imported with this category.</Abstract>
+			<DeclaredIn>NSData+GlucoseMeasurementParser.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)parseGlucoseMeasurementCharacteristicDetails:(BOOL)crcPresent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>crcPresent</Name>
+					<Abstract type="html">Indicates whether the characteristic includes the E2E-CRC field</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">All the data of the glucose measurement characteristic as a NSDictionary</Abstract></ReturnValue>
+			<Anchor>//api/name/parseGlucoseMeasurementCharacteristicDetails:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

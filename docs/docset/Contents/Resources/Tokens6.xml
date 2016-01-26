@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GlucoseMeasurementContextCarbohydrateID.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GlucoseMeasurementContextCarbohydrateID</TokenIdentifier>
+			<Abstract type="html">All possible Glucose Measurement Context Carbohydrate IDs with their assigned bit position</Abstract>
+			<DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextCarbohydrateIDReserved</TokenIdentifier>
+            <Abstract type="html">Carbohydrate ID that is reservered</Abstract>
+            <Declaration>GlucoseMeasurementContextCarbohydrateIDReserved</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextCarbohydrateIDBreakfast</TokenIdentifier>
+            <Abstract type="html">Carbohydrate ID for breakfast</Abstract>
+            <Declaration>GlucoseMeasurementContextCarbohydrateIDBreakfast</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextCarbohydrateIDLunch</TokenIdentifier>
+            <Abstract type="html">Carbohydrate ID for lunch</Abstract>
+            <Declaration>GlucoseMeasurementContextCarbohydrateIDLunch</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextCarbohydrateIDDinner</TokenIdentifier>
+            <Abstract type="html">Carbohydrate ID for dinner</Abstract>
+            <Declaration>GlucoseMeasurementContextCarbohydrateIDDinner</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextCarbohydrateIDSnack</TokenIdentifier>
+            <Abstract type="html">Carbohydrate ID for snack</Abstract>
+            <Declaration>GlucoseMeasurementContextCarbohydrateIDSnack</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextCarbohydrateIDDrink</TokenIdentifier>
+            <Abstract type="html">Carbohydrate ID for drink</Abstract>
+            <Declaration>GlucoseMeasurementContextCarbohydrateIDDrink</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextCarbohydrateIDSupper</TokenIdentifier>
+            <Abstract type="html">Carbohydrate ID for supper</Abstract>
+            <Declaration>GlucoseMeasurementContextCarbohydrateIDSupper</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextCarbohydrateIDBrunch</TokenIdentifier>
+            <Abstract type="html">Carbohydrate ID for brunch</Abstract>
+            <Declaration>GlucoseMeasurementContextCarbohydrateIDBrunch</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

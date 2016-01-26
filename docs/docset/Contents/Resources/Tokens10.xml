@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GlucoseMeasurementContextMedicationID.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GlucoseMeasurementContextMedicationID</TokenIdentifier>
+			<Abstract type="html">All possible Glucose Measurement Context Medication IDs with their assigned bit position</Abstract>
+			<DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextMedicationIDReserved</TokenIdentifier>
+            <Abstract type="html">Medication ID that is reserved</Abstract>
+            <Declaration>GlucoseMeasurementContextMedicationIDReserved</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="10"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextMedicationIDRapidActingInsulin</TokenIdentifier>
+            <Abstract type="html">Medication ID for rapid acting insulin</Abstract>
+            <Declaration>GlucoseMeasurementContextMedicationIDRapidActingInsulin</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="10"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextMedicationIDShortActingInsulin</TokenIdentifier>
+            <Abstract type="html">Medication ID for short acting insulin</Abstract>
+            <Declaration>GlucoseMeasurementContextMedicationIDShortActingInsulin</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="10"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextMedicationIDIntermediateActingInsulin</TokenIdentifier>
+            <Abstract type="html">Medication ID for intermediate acting insulin</Abstract>
+            <Declaration>GlucoseMeasurementContextMedicationIDIntermediateActingInsulin</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="10"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextMedicationIDLongActingInsulin</TokenIdentifier>
+            <Abstract type="html">Medication ID for long acting insulin</Abstract>
+            <Declaration>GlucoseMeasurementContextMedicationIDLongActingInsulin</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="10"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextMedicationIDPreMixedInsulin</TokenIdentifier>
+            <Abstract type="html">Medication ID for pre-mixed insulin</Abstract>
+            <Declaration>GlucoseMeasurementContextMedicationIDPreMixedInsulin</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="10"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

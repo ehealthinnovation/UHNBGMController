@@ -3,7 +3,7 @@
 //  UHNBGMController
 //
 //  Created by Nathaniel Hamming on 2013-05-03.
-//  Copyright (c) 2015 University Health Network.
+//  Copyright (c) 2016 University Health Network.
 
 #import "NSData+GlucoseMeasurementParser.h"
 #import "NSData+ConversionExtensions.h"

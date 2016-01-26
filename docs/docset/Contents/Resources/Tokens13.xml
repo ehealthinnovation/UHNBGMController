@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GlucoseMeasurementFlagOption.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GlucoseMeasurementFlagOption</TokenIdentifier>
+			<Abstract type="html">All possible Glucose Measurement Flag with their assigned bit position</Abstract>
+			<DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementFlagPresentTimeOffset</TokenIdentifier>
+            <Abstract type="html">Flag indicating that the time offset field is present in the measurement</Abstract>
+            <Declaration>GlucoseMeasurementFlagPresentTimeOffset</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="13"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementFlagPresentGlucoseConcentrationTypeAndSampleLocation</TokenIdentifier>
+            <Abstract type="html">Flag indicating that the sample location and fluid type fields is present in the measurement</Abstract>
+            <Declaration>GlucoseMeasurementFlagPresentGlucoseConcentrationTypeAndSampleLocation</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="13"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementFlagGlucoseConcentrationUnits</TokenIdentifier>
+            <Abstract type="html">Flag indicating the glucose concentration units. Value of 0 = kg/L and value of 1 = mol/L</Abstract>
+            <Declaration>GlucoseMeasurementFlagGlucoseConcentrationUnits</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="13"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementFlagPresentSensorStatusAnnunciation</TokenIdentifier>
+            <Abstract type="html">Flag indicating that the sensor status annunciation field is present in the measurement</Abstract>
+            <Declaration>GlucoseMeasurementFlagPresentSensorStatusAnnunciation</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="13"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementFlagPresentContextInfo</TokenIdentifier>
+            <Abstract type="html">Flag indicating that the glucose measurement context information will follow</Abstract>
+            <Declaration>GlucoseMeasurementFlagPresentContextInfo</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="13"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

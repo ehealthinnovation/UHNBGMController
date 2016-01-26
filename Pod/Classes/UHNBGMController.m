@@ -3,7 +3,7 @@
 //  UHNBGMController
 //
 //  Created by Nathaniel Hamming on 2013-04-30.
-//  Copyright (c) 2015 University Health Network.
+//  Copyright (c) 2016 University Health Network.
 //
 
 #import "UHNBGMController.h"

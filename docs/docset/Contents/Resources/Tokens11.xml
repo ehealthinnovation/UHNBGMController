@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GlucoseMeasurementContextMedicationUnits.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GlucoseMeasurementContextMedicationUnits</TokenIdentifier>
+			<Abstract type="html">All possible Glucose Measurement Context Medication Units with their assigned bit position</Abstract>
+			<DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextMedicationUnitsKg</TokenIdentifier>
+            <Abstract type="html">Medication units for kilograms (kg)</Abstract>
+            <Declaration>GlucoseMeasurementContextMedicationUnitsKg</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextMedicationUnitsL</TokenIdentifier>
+            <Abstract type="html">Medication units for litre (L)</Abstract>
+            <Declaration>GlucoseMeasurementContextMedicationUnitsL</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseMeasurementContextMedicationUnitsG</TokenIdentifier>
+            <Abstract type="html">Medication units for grams (g)</Abstract>
+            <Declaration>GlucoseMeasurementContextMedicationUnitsG</Declaration>
+            
+            <DeclaredIn>UHNBGMConstants.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>
