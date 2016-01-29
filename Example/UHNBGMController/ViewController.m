@@ -74,7 +74,7 @@
     
     if (indexPath.row < [self.bgReadings count])
     {
-        NSDictionary *bgReadingDetails = [self.bgReadings objectAtIndex:indexPath.row];
+        NSDictionary *bgReadingDetails = [self.bgReadings objectAtIndex:[self.bgReadings count] - (indexPath.row + 1)];
         NSNumber *value = (NSNumber *) bgReadingDetails[kGlucoseMeasurementKeyGlucoseConcentration];
         NSNumber *unitsNumber = (NSNumber *) bgReadingDetails[kGlucoseMeasurementKeyGlucoseConcentrationUnits];
         
@@ -139,8 +139,10 @@
         }
         
         NSString *dateString = [self.dateFormatter stringFromDate:creationDate];
-        cell.textLabel.text = [NSString stringWithFormat:@"%@%@Reading %.2f mmol/L taken at %@", prePostString, contextString, [value doubleValue], dateString];
+        cell.textLabel.text = [NSString stringWithFormat:@"%ld: %@%@Reading %.2f mmol/L taken at %@", [self.bgReadings count] - indexPath.row, prePostString, contextString, [value doubleValue], dateString];
         cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:8];
+        
+        self.numberOfBGReadingsLabel.text = [NSString stringWithFormat:@"%ld", (long)[self.bgReadings count]];
     }
     
     return cell;
@@ -186,6 +188,7 @@
     
     [self.bgReadings addObject:measurementDetails];
     self.currentBgReadingIndex = (self.bgReadings.count - 1);
+    [self.bgReadingsTable reloadData];
 }
 
 - (void) bgmController:(UHNBGMController *) controller didGetGlucoseMeasurementContextAtIndex:(NSUInteger) index withDetails:(NSDictionary *) measurementContextDetails;
@@ -210,6 +213,7 @@
     // NOTE: If you want to insert more information, find it here.
     
     [self.bgReadings setObject:glucoseReadingDetails atIndexedSubscript:self.currentBgReadingIndex];
+    [self.bgReadingsTable reloadData];
 }
 
 - (void) bgmController:(UHNBGMController *) controller didCompleteTransferWithNumberOfRecords:(NSUInteger) numberOfRecords;
